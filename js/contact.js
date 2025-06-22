@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
 
-  
+    hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
     toggleBtn.onclick = function () {
         dropdown_menu.classList.toggle('open')
         const isOpen = dropdown_menu.classList.contains('open')
@@ -15,11 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         : 'fa-solid fa-bars'
     }
   
-
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
-
   const form = document.getElementById('contact-form');
 
   form.addEventListener('submit', async (e) => {
