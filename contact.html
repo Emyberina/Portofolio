@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contact</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+          <h2>Emy <span class="highlight">Berina</span></h2>
+        </div>
+    <nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active" >Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Let's Talk Now</h2>
+                <h1>Do You Have A Project In Your Mind?</h1>
+                <p>I'm ready to collaborate on your next big idea. Send me a message and let's bring your vision to life!</p>
+                <div class="services">
+                    <p>Services</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Web Development</li>
+                        <li><i class="fas fa-check-circle"></i> Graphic Design</li>
+                        <li><i class="fas fa-check-circle"></i> App Development</li>
+                        <li><i class="fas fa-check-circle"></i> Video Editing</li>
+                        <li><i class="fas fa-check-circle"></i> Photography</li>
+                        <li><i class="fas fa-check-circle"></i> Digital Marketing</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <p>Contact me on</p>
+                    <ul>
+                        <li><a ><i href="#" class="fa fa-phone"></i></a></li>
+                        <li><a href="mailto:berinaemy@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/emy-berina-3446971a0/"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mvgrbjzk" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <select name="service" required>
+                        <option value="">Choose Service</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="app-development">App Development</option>
+                        <option value="video-editing">Video Editing</option>
+                        <option value="photography">Photography</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                    </select>
+                    <textarea name="message" placeholder="Write Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+      <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

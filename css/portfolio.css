@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.header-left h2 {
+  color: #6bc5a2;
+  margin: 0;
+}
+
+.header-left .highlight {
+  color: #ffffff; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 2em;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #6A9D8E;
+  transition: all 0.3s linear;
+}
+
+nav ul li a.active {
+  color: #6bc5a2;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.portfolio {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2em;
+}
+
+.portfolio:first-of-type {
+  display: flex; 
+}
+
+.intro-text {
+  flex: 1;
+  padding-right: 2em;
+  margin-top: 10em; 
+}
+
+.intro-text h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.main-image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em; 
+}
+
+.main-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.main-image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.button-container {
+  margin-top: 2em; 
+}
+
+.project-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; 
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  background-color: #3e3e3e;
+  padding: 1em;
+  padding-right: 11em;
+  margin: 1em 0;
+  width: calc(100% - 2em);
+  border-top-left-radius:50px ;
+  border-bottom-left-radius:50px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.project:hover {
+  background-color: #6bc5a2;
+  transform: translateX(-20px) scale(1.05);
+}
+
+.project.active {
+  background-color: #6bc5a2;
+  transform: translateX(-20px) scale(1.05);
+}
+
+.project .icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.project .details {
+  text-align: left;
+}
+
+.project h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.project p {
+  margin: 0.5em 0 0;
+  font-size: 0.9em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #6bc5a2;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5ba890;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #5ba890; 
+}
+
+.hamburger {
+  display: none;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#nav-menu {
+  display: flex;
+}
+
+@media only screen and (max-width: 58em) {
+  /* —— Hamburger / nav —— */
+  .hamburger {
+    display: flex;
+  }
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    z-index: 999;
+  }
+  #nav-menu.show {
+    display: flex;
+  }
+  nav ul li {
+    margin: 1em 0;
+  }
+
+  /* —— Portfolio slides —— */
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  .intro-text {
+    padding: 0;
+    margin: 2em 0;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 1.75em;
+  }
+
+  .main-image img {
+    width: 200px;
+    height: 200px;
+  }
+  .button-container {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin-right: 20em;
+    border-radius: 20px;
+}
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project.active {
+  transform: scale(1.05);
+}
+
+  .project .icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5em;
+  }
+  .project .details {
+    text-align: center;
+  }
+}
+
+/* Optional: further tweak for really small screens */
+@media only screen and (max-width: 30em) {
+  .intro-text h1 {
+    font-size: 1.5em;
+  }
+  .main-image img {
+    width: 150px;
+    height: 150px;
+  }
+  .btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.header-left h2 {
+  color: #6bc5a2;
+  margin: 0;
+}
+
+.header-left .highlight {
+  color: #ffffff; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 2em;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #6A9D8E;
+    transition: all 0.3s linear;
+  }
+  
+  nav ul li a.active {
+    color: #6bc5a2;
+  }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro h1, .intro h2 {
+  margin: 0;
+}
+
+.intro h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.intro h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.intro p {
+  line-height: 1.6;
+  margin-top: 1em;
+}
+.intro .hello {
+  font-size: 0.6em;
+}
+
+.intro .highlight {
+  color: #6bc5a2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  margin-top: 1em;
+  background-color: #6bc5a2;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.intro-image img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.hamburger {
+  display: none;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#nav-menu {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    padding: 0.6em 1.2em;
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 74em) {
+    .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 2.5em;
+  }
+
+  .intro h2 {
+    font-size: 1.5em;
+  }
+
+  .intro .hello {
+    font-size: 0.8em;
+  }
+
+  .intro-image img {
+    width: 300px;
+    height: 300px;
+    margin-top: 2em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+    #nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    z-index: 999;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+  } 
+
+  .hamburger {
+  display: flex;
+}
+}

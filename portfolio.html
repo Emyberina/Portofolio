@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+        <h2>Emy <span class="highlight">Berina</span></h2>
+    </div>
+    <nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="slide-container">
+    <section class="portfolio">
+      <div class="intro-text">
+        <h1>Imagine what you could achieve with my magic</h1>
+      </div>
+      <div class="main-image-container">
+        <div class="main-image">
+          <img id="project-image" src="images/music.webp" alt="Project Image">
+        </div>
+        <div class="button-container">
+          <a class="btn" id="check-link-1" href="https://igir0006.github.io/My-playlist/">Check it out</a>
+        </div>
+      </div>
+      <div class="project-list">
+        <div class="project active" data-image="images/music.webp" data-link="https://igir0006.github.io/My-playlist/">
+          <div class="icon"><img src="images/music.webp" alt="Music Playlist"></div>
+          <div class="details">
+            <h2>Music Playlist</h2>
+            <p>Full functionalities a music app might have. Just like Spotify or Apple Music.</p>
+          </div>
+        </div>
+        <div class="project" data-image="images/chat.png" data-link="chat.html">
+          <div class="icon"><img src="images/chat.png" alt="Live Chat"></div>
+          <div class="details">
+            <h2>Live Chat</h2>
+            <p>Full functionalities a chat app might have. Similar to Slack or WhatsApp.</p>
+          </div>
+        </div>
+        <div class="project" data-image="images/cocktail.png" data-link="https://igir0006.github.io/cocktails-API/">
+          <div class="icon"><img src="images/cocktail.png" alt="Cocktail API"></div>
+          <div class="details">
+            <h2>Cocktail API</h2>
+            <p>Explore various drink recipes through this designed cocktail api</p>
+          </div>
+        </div>
+        <div class="project" data-image="images/story.png" data-link="showcase.html">
+          <div class="icon"><img src="images/story.png" alt="24hour Stories"></div>
+          <div class="details">
+            <h2>Logo Creation</h2>
+            <p>Create any logo you imagine with my experience in adobe illustrator</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Slide -->
+    <section class="portfolio">
+        <div class="intro-text">
+          <h1>Imagine what you could achieve with my magic</h1>
+        </div>
+        <div class="main-image-container">
+          <div class="main-image">
+            <img id="project-image2" src="images/lightbulb.png" alt="Project Image2">
+          </div>
+          <div class="button-container">
+            <a class="btn" href="https://igir0006.github.io/Light-Navbar/" id="check-link-2">Check it out</a>
+          </div>
+        </div>
+        <div class="project-list">
+          <div class="project active" data-image2="images/lightbulb.png" data-link="https://igir0006.github.io/Light-Navbar/">
+            <div class="icon"><img src="images/lightbulb.png" alt="Light navbar"></div>
+            <div class="details">
+              <h2>Light Navbar</h2>
+              <p>Css styles for light impression on click</p>
+            </div>
+          </div>
+          <div class="project" data-image2="images/game.png" data-link="https://igir0006.github.io/breakout-game/">
+            <div class="icon"><img src="images/game.png" alt="Breakout game"></div>
+            <div class="details">
+              <h2>Breakout Game</h2>
+              <p>Game logic with collision detection and scoring</p>
+            </div>
+          </div>
+          <div class="project" data-image2="images/city.png" data-link="ottawa.html">
+            <div class="icon"><img src="images/city.png" alt="Movie API"></div>
+            <div class="details">
+              <h2>DoorsOpenOttawa Concept</h2>
+              <p>Full functionalities a chat app might have. Similar to Slack or WhatsApp.</p>
+            </div>
+          </div>
+          <div class="project" data-image2="images/movie.png" data-link="https://igir0006.github.io/movie-API/">
+            <div class="icon"><img src="images/movie.png" alt="Gift app"></div>
+            <div class="details">
+              <h2>Movie Database</h2>
+              <p>Search any movie in the world with the IMDB API</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <div class="dots-container">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+  </div>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
+
+
+
+

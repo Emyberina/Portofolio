@@ -1,0 +1,5 @@
+# Ignore video files
+video/
+*.mp4
+*.webm
+*.mov
